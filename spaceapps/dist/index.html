@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../images/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Voyague</title>
+    
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<version>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-e327362f.js"></script>
+    <link rel="stylesheet" href="./assets/index-e4d68966.css">
+  </head>
+  <body id="body">
+    <div class="container">
+      <h1 class="fade-in-text">Stellar Voyage</h1>
+      <a href="./src/menu.html" class="btn">Start the adventure</a>
+    </div>
+    <div class="background"></div>
+    <div class="audio-control">
+      <button id="toggleButton" class="audio-control-button">
+        <span class="icon">🔊</span>
+      </button>
+      <audio id="audio" class="fade-out" src="/spaceapps/dist/assets/strack-def.wav"></audio>
+    </div>
+
+    
+  </body>
+</html>

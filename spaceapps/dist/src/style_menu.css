@@ -1,0 +1,117 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+h1 {
+  position: absolute;
+  top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 99;
+  font-family: 'Yu Gothic UI Semibold', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+
+body {  
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* Opcional: para centrar el lienzo horizontalmente y verticalmente */
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+  blockquote {
+    margin: 100;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+
+
+/* Estilo para los botones */
+button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para los botones específicos */
+.p1 {
+    position: absolute;
+    left: 195px;
+    bottom: -300px;
+}
+
+.p2 {
+    position: absolute;
+    bottom: -300px;
+    left: 545px;
+}
+
+.p3 {
+    position: absolute;
+    bottom: -300px;
+    left: 880px;
+}
+
+.p4 {
+    position: absolute;
+    bottom: -300px;
+    left: 1240px;
+}
+
+/* Cambiar el color de fondo cuando se pasa el mouse sobre el botón */
+button:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+/* Estilo para el fondo negro y texto blanco de los párrafos */
+.p1, .p2, .p3, .p4 {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  padding: 10px; /* Espaciado interno para los párrafos */
+  margin: 5px 0; /* Espaciado externo para los párrafos */
+  border-radius: 5px; /* Esquinas redondeadas para un aspecto más suave */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+}
